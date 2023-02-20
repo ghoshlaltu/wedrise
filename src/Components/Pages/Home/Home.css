@@ -1,0 +1,121 @@
+.css-1ss2ei0-MuiContainer-root {
+  max-width: 100% !important;
+  z-index: 999999999999999999;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    
+  }
+  
+  .iWSSbO {
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    position: relative;
+    z-index: 8000;
+    min-height: inherit;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background: rgb(74 63 67 / 11%);
+    /* background: #c2c2c2; */
+    
+  }
+  .MuiTypography-inherit
+  {
+    color: #c1cbd4 !important;
+     
+      padding-top: 13px;
+  }
+  .hello_there
+  {
+    width: 100%;
+  }
+  .text-center
+  {
+    text-align: center !important;
+    font-family: 'Garamond';
+  }
+
+
+  /* story  */
+  .story_img 
+  {
+    -webkit-transform: scale(1);
+	transform: scale(0.9);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  }
+  .story_img:hover  {
+    -webkit-transform: scale(0.3);
+    transform: scale(1);
+  }
+  /* story  */
+
+
+
+
+.instagram 
+{
+  padding-top: 100px !important;
+}
+
+.slider-wrapper.axis-horizontal {
+  height: 350px !important;
+}
+
+.vid1 
+{
+  object-fit: cover !important;
+  /* width: 100% !important; */
+  height: 500px !important;
+  top: 0;
+    left: 0;
+}
+
+.f-instagram
+{
+  margin-top: 16px !important;
+}
+
+.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-1.css-a5rdam-MuiGrid-root {
+  margin-top: 50px;
+}
+
+.heading 
+{
+  font-size: 30px;
+    font-family: 'Garamond';
+    color: #9f8c7b;
+}
+
+
+
+
+
+
+
+
+
+
+.App {
+  text-align: center;
+}
+
+
+
+.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-md-4.css-1lj5egr-MuiGrid-root {
+  padding-top: 60px;
+}

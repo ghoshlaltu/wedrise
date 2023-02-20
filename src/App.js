@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+
+
+import React, { useState, useEffect } from 'react'; 
+import { useLocation } from "react-router-dom";
+import logo from './wedrise.png';
 import './App.css';
+import Navigation from "./Components/Navigation/Navigation"; // Navigation components
+import Home from "./Components/Pages/Home/Home"; // Pages Home
+import ContactUs from "./Components/Pages/Contact/ContactUs"; // Pages Contact us
+import Footer from "./Components/Footer/Footer"; // Footer components
+
+
+import { BrowserRouter as Router, Routes, Route, useParams } from "react-router-dom";
+
+
 
 function App() {
+
+  // const [isHeaderBackground, setisHeaderBackground] = useState('');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navigation/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<ContactUs />} />
+      </Routes>
+      <Footer/>
+  </Router>
   );
 }
 

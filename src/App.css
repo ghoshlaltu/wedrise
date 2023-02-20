@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+.eIimmZ {
+
+  font-size: 18px !important;
+  color: #766464 !important;
+}
+
+
+.MuiContainer-root.MuiContainer-maxWidthLg.MuiContainer-fixed.css-1ss2ei0-MuiContainer-root {
+  width: 100%;
+  left: 0px;
+  padding-left: 0px;
+}
+body 
+{
+  overflow-x: hidden;
+overflow-y: auto;
+font-family: 'Garamond';
+}
+
+.jmpQX
+{
+  z-index: 9999 !important;
+  position: fixed !important;
+  background-color: #8b6a6a !important;
+}
+.kcWYtG
+{
+  font-size: 1.5rem !important;
+}
+.crLmQS svg 
+{
+  font-size: 3rem !important;
+}

@@ -1,0 +1,71 @@
+.getin-section
+{
+    margin-top: 100px !important;
+    /* margin: auto; */
+    /* height: 100vh; */
+}
+.getindiv 
+{
+    width: 100%;
+    text-align: center;
+}
+.getin
+{
+    height: 250px;
+    text-align: center;
+    
+    height: 200px;
+}
+.contact-h2
+{
+    font-family: 'Garamond';
+    font-size: 2.9000em;
+    color: #9f8c7b;
+    opacity: 0.70;
+    margin-bottom: 10%;
+    line-height: 42px;
+    text-align: center;
+}
+
+.contact-phone
+{
+    font-family: 'Garamond';
+    font-size: 1.5000em;
+    color: #000;
+    opacity: 0.70;
+    line-height: 42px;
+    text-align: center;
+}
+.buttom-margin 
+{
+    margin-bottom: 5px;
+}
+
+.MuiFormControl-root.MuiTextField-root.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    width: 100%;
+}
+
+.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-6.css-1osj8n2-MuiGrid-root {
+    padding: 10px;
+}
+.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.css-1idn90j-MuiGrid-root {
+    padding: 10px;
+}
+
+/* .contact-form 
+{
+    height: 70vh;
+} */
+.text-right
+ {
+    text-align: right;
+ }
+ .contact-faq
+  {
+    font-family: 'Garamond';
+    font-size: 1.5000em;
+    color: #000;
+    opacity: 0.70;
+    line-height: 42px;
+    text-align: center;
+  }

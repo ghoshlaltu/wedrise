@@ -1,0 +1,24 @@
+npm install @mui/material @emotion/react @emotion/styled
+
+
+npm install @mui/icons-material
+
+ npm install react react-dom    
+
+
+ npm i styled-components
+
+ npm i react-router-dom
+
+
+ npm install react-icons
+
+
+npm i react-social-icons
+
+
+npm install react-lightbox-component
+
+
+npm i react-responsive-carousel
+
