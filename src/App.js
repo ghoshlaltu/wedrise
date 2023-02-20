@@ -14,7 +14,7 @@ import { BrowserRouter as Router, Routes, Route, useParams } from "react-router-
 
 function App() {
 
-    // const [isHeaderBackground, setisHeaderBackground] = useState(''); // new changes
+    // const [isHeaderBackground, setisHeaderBackground] = useState(''); // new changes  01
 
     return ( <
         Router >
