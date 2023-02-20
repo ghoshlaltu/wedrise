@@ -1,6 +1,4 @@
-
-
-import React, { useState, useEffect } from 'react'; 
+import React, { useState, useEffect } from 'react';
 import { useLocation } from "react-router-dom";
 import logo from './wedrise.png';
 import './App.css';
@@ -16,18 +14,26 @@ import { BrowserRouter as Router, Routes, Route, useParams } from "react-router-
 
 function App() {
 
-  // const [isHeaderBackground, setisHeaderBackground] = useState('');
+    // const [isHeaderBackground, setisHeaderBackground] = useState(''); // new changes
 
-  return (
-    <Router>
-      <Navigation/>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<ContactUs />} />
-      </Routes>
-      <Footer/>
-  </Router>
-  );
+    return ( <
+        Router >
+        <
+        Navigation / >
+        <
+        Routes >
+        <
+        Route path = "/"
+        element = { < Home / > }
+        /> <
+        Route path = "/contact"
+        element = { < ContactUs / > }
+        /> < /
+        Routes > <
+        Footer / >
+        <
+        /Router>
+    );
 }
 
 export default App;
