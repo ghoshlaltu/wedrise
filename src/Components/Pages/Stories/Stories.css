@@ -1,0 +1,30 @@
+@media (min-width: 600px)
+{
+.sto {
+    max-width: 750px!important;
+}
+}
+
+
+.sto_back  {
+
+       background-color: #fff7f7 !important;
+}
+
+.h5 {
+    font-family: 'Roboto Slab', serif !important;
+    color: #595858 !important;
+    font-size: 28px !important;
+    line-height: 35px !important;
+    font-weight: 700 !important;
+}
+
+.p {
+    font-family: 'Roboto Slab', serif !important;
+    color: #595858 !important;
+    font-weight: 700 !important;
+}
+.story-p {
+    margin: 0 0 15px  !important;
+    font-size: 18px !important;
+ }

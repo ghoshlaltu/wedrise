@@ -5,9 +5,9 @@ const Menu = ({ route }) => {
   return (
     <SMenu>
       <MenuButton>{route.name}</MenuButton>
-      <SubRoutesContainer>
+      <SubRoutesContainer >
         {route.subRoutes.map((subRoute) => (
-          <SubRoute to={subRoute.link} key={subRoute.name}>
+          <SubRoute  to={subRoute.link} key={subRoute.name}>
             {subRoute.name}
           </SubRoute>
         ))}

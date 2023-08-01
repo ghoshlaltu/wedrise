@@ -21,32 +21,32 @@ import { AiFillInstagram } from "react-icons/ai";
 
 const Navbar = ({ toggleDrawer, routes }) => {
   return (
-    <SNavbar>
+    <SNavbar className="menuuu">
       <NavContainer>
-        <DrawerButton onClick={toggleDrawer}>
+        <DrawerButton onClick={toggleDrawer} className="menuuu1">
           <FaBars />
         </DrawerButton>
         {/* <SNavbarBrand><img src={logo} className="App-logo" alt="logo" /></SNavbarBrand> */}
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <Toolbar>
-          <img src={logo} className="1" alt="logo" />
+          <Link to = '/'><img src={logo} className="1" alt="logo" /></Link>
           </Toolbar>
         
         <RightNav>
-          <NavRoutes>
+          <NavRoutes className="my-menu">
             {routes.map((route) => {
               if (route.subRoutes) {
                 return <Menu route={route} key={route.name} />;
               }
               return (
-                <NavRoute to={route.link} key={route.name}>
+                <NavRoute className="my-menu-sub" to={route.link} key={route.name}>
                   {route.name}
                 </NavRoute>
               );
             })}
           </NavRoutes>
           {/* <LoginButton>Login</LoginButton> */}
-          <Link1 href="#" underline="none">
+          <Link1 href="#" underline="none" className="instagram-link">
               <AiFillInstagram />
           </Link1>
         </RightNav>

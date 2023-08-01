@@ -17,7 +17,7 @@ const Navigation = (props) => {
   };
 
   const ServicesCategories = useState(props.appBarbackground);
-  console.log(1);
+  // console.log(1);
   return (
     <>
       <Drawer routes={routes} isOpen={isOpen} toggleDrawer={toggleDrawer} />

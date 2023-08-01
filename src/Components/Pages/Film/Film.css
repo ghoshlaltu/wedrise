@@ -1,0 +1,23 @@
+.films{
+    padding-top: 50px ;
+    padding-bottom: 50px;
+}
+
+.film 
+{
+    padding-top: 250px ;
+    padding-bottom: 250px;
+    padding: 10px !important;
+}
+
+@media (min-width: 600px){
+    .films{
+        max-width: 754px !important;
+    }
+}
+
+
+.iframe 
+{
+    height: 200px !important;
+}

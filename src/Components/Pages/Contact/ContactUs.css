@@ -29,8 +29,8 @@
 
 .contact-phone
 {
-    font-family: 'Garamond';
-    font-size: 1.5000em;
+    font-family: 'Open Sans';
+    font-size: 1.2000em;
     color: #000;
     opacity: 0.70;
     line-height: 42px;
@@ -41,17 +41,13 @@
     margin-bottom: 5px;
 }
 
-.MuiFormControl-root.MuiTextField-root.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+.my-form-TextField {
     width: 100%;
 }
 
-.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-6.css-1osj8n2-MuiGrid-root {
+.my-form-Grid {
     padding: 10px;
 }
-.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.css-1idn90j-MuiGrid-root {
-    padding: 10px;
-}
-
 /* .contact-form 
 {
     height: 70vh;
@@ -69,3 +65,20 @@
     line-height: 42px;
     text-align: center;
   }
+
+  .accor 
+  {
+    margin-bottom: 100px !important;
+  }
+
+.TypographyTitle {
+    color: #444 !important;
+    /* background: #f0e9e0 !important; */
+    font-size: 14px !important;
+    font-weight: 700 !important;
+
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+/* .girdaccordion {
+    padding: 34px !important;
+} */

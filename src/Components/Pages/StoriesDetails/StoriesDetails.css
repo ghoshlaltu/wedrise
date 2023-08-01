@@ -1,0 +1,202 @@
+@media (min-width: 600px)
+{
+/* .css-cuefkz-MuiContainer-root {
+    max-width: 85%;
+} */
+}
+.backkkk 
+{
+    max-width: 85% !important;
+    max-height: 75% ;
+}
+
+.defsult-padding 
+{
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+.defsult-padding1
+{
+    padding-top: 0px !important;
+    padding-bottom: 50px !important;
+}
+.sto_back  {
+
+       background-color: #fff7f7 !important;
+}
+.submit-strory-comments 
+{
+    width: 100% !important;
+    background: #00000026 !important;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+.hemop 
+{
+    font-family: 'Open Sans';
+    font-size: 22px;
+    color: #676363;
+}
+
+.background 
+{
+    width: 100%;
+    text-align: center;
+    height: auto;
+
+}
+.react-audio-player 
+{
+    width: 100%;
+}
+
+.audio 
+{
+    height: 100px;
+}
+
+
+
+
+
+
+
+.social1 ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    /* margin-left: 47%; */
+  }
+  
+  .social1 ul::before {
+    content: "\f1e0";
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   background: linear-gradient(45deg, #ed0c5c, #e00e58);
+    border-radius: 30px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 30px;
+    padding-left: 2px;
+    transition: 0.5s;
+    z-index: 1;
+  }
+  
+  .social1 ul:hover::before {
+    width: 60px;
+  }
+  
+  .social1 ul li {
+    position: absolute;
+    transition: 1s;
+  }
+  
+  .social1 ul li a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #262626;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 30px;
+    transition: 0.5s;
+  }
+  
+  .social1 ul li:nth-child(1) a {
+    background-color: #5fcc58;
+  }
+  
+  .social1 ul li:nth-child(2) a {
+    background-color: #01518e;
+  }
+  .social1 ul li:nth-child(3) a {
+    background-color: rgb(0 162 243);
+  }
+  .social1 ul li:nth-child(4) a {
+    background-color: #ca3d7e
+  }
+  .social1 ul li:nth-child(5) a {
+    background-color: #e4405f;
+  }
+  
+  .social1 ul:hover li:nth-child(1) a {
+    transform: translatex(68px) rotate(360deg);
+    transition-delay: 0.8s;
+  }
+  
+  .social1 ul:hover li:nth-child(2) a {
+    transform: translatex(136px) rotate(360deg);
+    transition-delay: 0.6s;
+  }
+  
+  .social1 ul:hover li:nth-child(3) a {
+    transform: translatex(204px) rotate(360deg);
+    transition-delay: 0.4s;
+  }
+  
+  .social1 ul:hover li:nth-child(4) a {
+    transform: translatex(272px) rotate(360deg);
+    transition-delay: 0.2s;
+  }
+  
+  .social1 ul:hover li:nth-child(5) a {
+    transform: translatex(340px) rotate(360deg);
+    transition-delay: 0s;
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .social1 ul {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      width: 52px;
+      height: 60px;
+      padding-top: 3px;
+      /*margin-left: 44%;*/
+  }
+  .social1 ul:hover li:nth-child(1) a {
+      transform: translatex(65px) rotate(360deg);
+      transition-delay: 0.8s;
+  }
+  .social1 ul:hover li:nth-child(2) a {
+      transform: translatex(120px) rotate(360deg);
+      transition-delay: 0.8s;
+  }
+  .social1 ul:hover li:nth-child(3) a {
+      transform: translatex(175px) rotate(360deg);
+      transition-delay: 0.8s;
+  }
+  .social1 ul:hover li:nth-child(4) a {
+      transform: translatex(230px) rotate(360deg);
+      transition-delay: 0.8s;
+  }
+  .social1 ul:hover li:nth-child(5) a {
+      transform: translatex(285px) rotate(360deg);
+      transition-delay: 0.8s;
+  }
+    .social1 ul li a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      line-height: 40px;
+      text-align: center;
+      background-color: #262626;
+      color: #fff;
+      border-radius: 30%;
+      font-size: 30px;
+      transition: 0.5s;
+  }
+  }

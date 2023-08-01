@@ -1,27 +1,27 @@
 export const routes = [
-    {
-      name: "Home",
-      link: "/",
-    },
-    {
-      name: "About",
-      link: "/about",
+    // {
+    //   name: "HOME",
+    //   link: "/",
+    // },
+    // {
+    //   name: "About",
+    //   link: "/about",
       
-      // subRoutes: [
-      //   {
-      //     name: "About Us",
-      //     link: "/service/web-development",
-      //   },
-      //   {
-      //     name: "Why Choose Us",
-      //     link: "/service/mobile-development",
-      //   },
-      //   {
-      //     name: "Our Team",
-      //     link: "/service/ui-ux-design",
-      //   },
-      // ],
-    },
+    //   subRoutes: [
+    //     {
+    //       name: "About Us",
+    //       link: "/service/web-development",
+    //     },
+    //     {
+    //       name: "Why Choose Us",
+    //       link: "/service/mobile-development",
+    //     },
+    //     {
+    //       name: "Our Team",
+    //       link: "/service/ui-ux-design",
+    //     },
+    //   ],
+    // },
     // {
     //   name: "Services",
     //   link: "/services",
@@ -41,12 +41,17 @@ export const routes = [
     //     },
     //   ],
     // },
+    
     {
-      name: "Products",
-      link: "/products",
+      name: "STORIES",
+      link: "/stories",
     },
     {
-      name: "Contact Us",
+      name: "FILMS",
+      link: "/films",
+    },
+    {
+      name: "CONNECT",
       link: "/contact",
     },
   ];

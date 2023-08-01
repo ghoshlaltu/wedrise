@@ -14,10 +14,10 @@ import { Carousel } from 'react-responsive-carousel';
 function Testimonial() {
   return (
     <>
-     <Container fixed spacing={0} style={{ 
+     <Container className='testimonial-section' fixed spacing={0} style={{ 
             backgroundImage: `url("https://www.wedrise.in/assets/img/home.jpg")` 
           }}>
-          <Grid item xs={12} md={12} >
+          <Grid item xs={12} md={12} className=''>
                 <Carousel
               showArrows={true}
               infiniteLoop={true}
@@ -32,7 +32,7 @@ function Testimonial() {
             >
               {/* <div> */}
                 {/* <img src="/images/shirley.png" /> */}
-                <div className="myCarousel" >
+                <div className="myCarousel " >
                   <h3>Shirley Fultz</h3>
                   <h4>Designer</h4>
                   <p>

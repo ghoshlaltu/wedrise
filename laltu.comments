@@ -22,3 +22,25 @@ npm install react-lightbox-component
 
 npm i react-responsive-carousel
 
+{{-- npm install flickity --save
+npm i react-flickity-component
+npm install flickity@2.3.0
+npm install react-flickity-component --}}
+
+npm i react-material-ui-carousel
+
+
+npm install --save react-audio-player  
+npm install --save react-router-hash-link
+
+
+
+
+
+
+
+
+https://stackoverflow.com/questions/57778950/how-to-load-more-search-results-when-scrolling-down-the-page-in-react-js
+https://stackoverflow.com/questions/64717841/react-infinite-scroll-component-load-more-with-array
+https://www.npmjs.com/package/react-infinite-scroll-component
+https://www.npmjs.com/package/react-infinite-scroller

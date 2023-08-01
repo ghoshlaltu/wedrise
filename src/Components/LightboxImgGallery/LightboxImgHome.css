@@ -8,9 +8,27 @@ img.lightbox-img-thumbnail
       flex-grow: 0 !important; */
       max-width: 33.333333% !important;
       width: 350px !important;
-      height: 250px !important;
-  
+      /* height: 150px !important; */
+      /* width: 80% !important; */
+    /* height: 250px !important; */
+  /* max-height: 250px !important; */
+  height: auto !important;
 }
+@media screen and (min-width: 1024px) 
+{
+  
+  /* CSS */
+  /* img.lightbox-img-thumbnail
+  {
+    height: 100px !important;
+  } */
+}
+/* @media (max-width: 1920px) {
+  img.lightbox-img-thumbnail
+  {
+    height: 100px !important;
+  }
+} */
 .lightbox-backdrop {
  
   z-index: 999999!important;

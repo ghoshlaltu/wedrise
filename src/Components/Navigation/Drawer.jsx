@@ -5,9 +5,9 @@ import ExpandMenu from "./ExpandMenu";
 const Drawer = ({ isOpen, toggleDrawer, routes }) => {
   return (
     <>
-      {isOpen && <Backdrop onClick={toggleDrawer} />}
-      <SDrawer isOpen={isOpen}>
-        <RightNav>
+      {isOpen && <Backdrop onClick={toggleDrawer} className="toggle"/>}
+      <SDrawer isOpen={isOpen} className="toggle_01">
+        <RightNav className="toggle_02">
           {/* <SNavbarBrand>LOGO</SNavbarBrand> */}
           <NavRoutes>
             {routes.map((route) => {
@@ -15,7 +15,7 @@ const Drawer = ({ isOpen, toggleDrawer, routes }) => {
                 return <ExpandMenu route={route} key={route.name} />;
               }
               return (
-                <NavRoute
+                <NavRoute  className="m-sub-menu"
                   onClick={toggleDrawer}
                   to={route.link}
                   key={route.name}

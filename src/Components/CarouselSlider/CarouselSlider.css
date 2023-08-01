@@ -1,0 +1,19 @@
+.stories_slider 
+{
+    width: 100% !important;
+    height: 750px !important;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .stories_slider 
+    {
+        width: 100% !important;
+        height: 300px !important;
+    }
+    
+  }
+.css-1m9128y {
+  
+    margin-bottom: 40px !important;
+}

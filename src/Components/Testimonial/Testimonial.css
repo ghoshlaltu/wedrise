@@ -1,11 +1,13 @@
 
-
 .carousel-root {
     width: 64% !important;
     margin: auto !important;
     /* margin-top: 3% !important; */
   }
-  
+  .testimonial-section 
+  {
+    max-width: 100% !important;
+  }
   .carousel .slide {
     /* background: #fff !important; */
     color: black;
@@ -19,8 +21,12 @@
   
   .myCarousel {
     /* background: #fafafa; */
+    
+  margin-top: 50px !important;
+  margin-bottom: 180px !important;
+
     margin-top: -6%;
-    width: 54%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 6%;
@@ -100,6 +106,7 @@
       outline: 0;
       width: 93% !important;
       margin: auto !important;
+      box-sizing: revert !important;
     }
   
     .carousel.carousel-slider .control-arrow {
@@ -108,7 +115,7 @@
     .myCarousel {
       /* background: #fafafa; */
       margin-top: -9%;
-      width: 88%;
+      width: 100%;
       margin-left: auto;
       margin-right: auto;
       padding-top: 8%;

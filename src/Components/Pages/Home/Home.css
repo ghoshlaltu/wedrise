@@ -1,11 +1,28 @@
-.css-1ss2ei0-MuiContainer-root {
+/* .css-1ss2ei0-MuiContainer-root {
   max-width: 100% !important;
   z-index: 999999999999999999;
+} */
+.my-home-vid {
+  max-width: 100% !important;
+  z-index: 999999999999999999;
+
+  width: 100% !important;
+  left: 0px !important; 
+  padding-left: 0px !important;
+  margin-right: auto !important;
+  box-sizing: revert !important; 
+}
+.my-home-vid2 
+{
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 video {
     object-fit: cover;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     /* position: fixed; */
     top: 0;
@@ -13,31 +30,11 @@ video {
     
   }
   
-  .iWSSbO {
-    margin: 0;
-    border-radius: 0;
-    border: none;
-    position: relative;
-    z-index: 8000;
-    min-height: inherit;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    background: rgb(74 63 67 / 11%);
-    /* background: #c2c2c2; */
-    
-  }
-  .MuiTypography-inherit
+  .instagram-link
   {
     color: #c1cbd4 !important;
      
-      padding-top: 13px;
+      padding-top: 10px !important;
   }
   .hello_there
   {
@@ -72,9 +69,9 @@ video {
   padding-top: 100px !important;
 }
 
-.slider-wrapper.axis-horizontal {
+/* .slider-wrapper.axis-horizontal {
   height: 350px !important;
-}
+} */
 
 .vid1 
 {
@@ -90,8 +87,8 @@ video {
   margin-top: 16px !important;
 }
 
-.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-1.css-a5rdam-MuiGrid-root {
-  margin-top: 50px;
+.my-grid  {
+  margin-top: 50px !important;
 }
 
 .heading 
@@ -116,6 +113,16 @@ video {
 
 
 
-.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-md-4.css-1lj5egr-MuiGrid-root {
+/* .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-md-4.css-1lj5egr-MuiGrid-root {
   padding-top: 60px;
+} */
+
+.flm 
+{
+  padding-top: 60px !important;
+  padding-left: 0px !important;
+}
+
+.iframe {
+  width: 100% !important;
 }

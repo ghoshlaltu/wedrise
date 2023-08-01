@@ -9,7 +9,7 @@ const ExpandMenu = ({ route }) => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <SMenu>
+    <SMenu >
       <MenuButton onClick={toggleMenu}>
         {route.name} {isMenuOpen ? <FaAngleDown /> : <FaAngleRight />}
       </MenuButton>
