@@ -16,7 +16,7 @@ import { BrowserRouter as Router, Routes, Route, useParams } from "react-router-
 
 
 
-function App() {
+function App() { // 01-08-2023
 
     // const [isHeaderBackground, setisHeaderBackground] = useState(''); // new changes  01
 
