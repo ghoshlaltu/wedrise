@@ -14,6 +14,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import CarouselSlider from "./../../CarouselSlider/CarouselSlider"; // Pages Carousel Slider component
 
 import './Stories.css';
+// narendar 
 
 import img1 from './../../../16.jpg';
 import InfiniteScroll from 'react-infinite-scroll-component';
