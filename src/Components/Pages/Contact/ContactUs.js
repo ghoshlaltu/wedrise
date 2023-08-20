@@ -16,6 +16,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
+import Textarea from '@mui/joy/Textarea';
 
 
 import './ContactUs.css';
@@ -73,25 +74,31 @@ function ContactUs() {
         
         <Grid container spacing={0} >
             <Grid item xs={12} lg={6} className='my-form-Grid'>
-                <TextField className='my-form-TextField' id="outlined-basic" label="First Name" variant="outlined" />
+                <TextField className='my-form-TextField ccc' id="outlined-basic" label="First Name" variant="outlined" />
             </Grid>
             <Grid item xs={12} lg={6} className='my-form-Grid'>
-                <TextField className='my-form-TextField' id="outlined-basic" label="Last Name" variant="outlined" />
+                <TextField className='my-form-TextField ccc' id="outlined-basic" label="Last Name" variant="outlined" />
             </Grid>
             <Grid item xs={12} lg={6} className='my-form-Grid'>
-                <TextField className='my-form-TextField' id="outlined-basic" label="Email" variant="outlined" />
+                <TextField className='my-form-TextField ccc' id="outlined-basic" label="Email" variant="outlined" />
             </Grid>
             <Grid item xs={12} lg={6} className='my-form-Grid'>
-                <TextField className='my-form-TextField' id="outlined-basic" label="Phone" variant="outlined" />
+                <TextField className='my-form-TextField ccc' id="outlined-basic" label="Phone" variant="outlined" />
             </Grid>
-            <Grid item xs={12} lg={6} className='my-form-Grid'>
-                <TextField className='my-form-TextField' id="outlined-basic" label="Subject" variant="outlined" />
+            <Grid item xs={12} lg={12} className='my-form-Grid ccc'>
+                <TextField className='my-form-TextField ccc' id="outlined-basic" label="Subject" variant="outlined" />
             </Grid>
-            <Grid item xs={12} lg={6} className='my-form-Grid'>
-              <TextField className='my-form-TextField' id="outlined-basic" label="Message" variant="outlined" />
+            <Grid item xs={12} lg={12} className='my-form-Grid'>
+              {/* <TextField className='my-form-TextField' id="outlined-basic" label="Message" variant="outlined" /> */}
+              <Textarea className="ccc"
+                placeholder="Type in here…"
+                defaultValue=""
+                minRows={2}
+                maxRows={4}
+                />
             </Grid>
-            <Grid item xs={12} className="text-right">
-                <Button variant="outlined">Send </Button>
+            <Grid item xs={12} className="text-right my-form-Grid">
+                <Button variant="outlined" className='sendbutton'>Send </Button>
             </Grid>
         </Grid>
     </Container>

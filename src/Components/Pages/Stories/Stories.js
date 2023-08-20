@@ -16,6 +16,7 @@ import CarouselSlider from "./../../CarouselSlider/CarouselSlider"; // Pages Car
 import './Stories.css';
 
 import img1 from './../../../16.jpg';
+import InfiniteScroll from 'react-infinite-scroll-component';
 
 function Stories() {
    
@@ -47,7 +48,7 @@ function Stories() {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Link to="/stories-details"> <Button size="small">CONTINUE READING</Button></Link>
+                    <Link to="/stories-details"> <Button size="small" className='story-dtl more'>CONTINUE READING</Button></Link>
                 </CardActions>
             </Card>
             <br></br>
@@ -72,7 +73,7 @@ function Stories() {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Link to="/stories-details"> <Button size="small">CONTINUE READING</Button></Link>
+                    <Link to="/stories-details"> <Button size="small" className='story-dtl more'>CONTINUE READING</Button></Link>
                 </CardActions>
             </Card>
             <br></br>
@@ -97,7 +98,7 @@ function Stories() {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Link to="/stories-details"> <Button size="small">CONTINUE READING</Button></Link>
+                    <Link to="/stories-details"> <Button size="small" className='story-dtl more'>CONTINUE READING</Button></Link>
                 </CardActions>
             </Card>
             <br></br>
@@ -121,7 +122,7 @@ function Stories() {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Link to="/stories-details"> <Button size="small">CONTINUE READING</Button></Link>
+                    <Link to="/stories-details"> <Button size="small" className='story-dtl more'>CONTINUE READING</Button></Link>
                 </CardActions>
             </Card>
             <br></br>

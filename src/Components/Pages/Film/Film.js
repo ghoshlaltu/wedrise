@@ -16,8 +16,6 @@ import { Helmet } from 'react-helmet';
 
 function Film() {
 
-  
-
   return (
 
    
@@ -39,9 +37,9 @@ function Film() {
           </video>
       </Container>
 
-      <Container maxWidth="sm" className='films'>
+      <Container maxWidth="lg" className='films'>
             <Grid item xs={12} md={4} className="film">
-                <iframe className="iframe" src='https://www.youtube.com/embed/R_IlwGIV6Bw'
+                <iframe className="iframe1" src='https://www.youtube.com/embed/R_IlwGIV6Bw'
                     frameborder='0'
                     width="380"
                     height="100%"

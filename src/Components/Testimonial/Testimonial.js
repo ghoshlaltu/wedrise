@@ -14,9 +14,15 @@ import { Carousel } from 'react-responsive-carousel';
 function Testimonial() {
   return (
     <>
-     <Container className='testimonial-section' fixed spacing={0} style={{ 
-            backgroundImage: `url("https://www.wedrise.in/assets/img/home.jpg")` 
-          }}>
+    <div className='testi'>
+     <Container className='testimonial-section' fixed spacing={0} >
+            
+             <Grid item xs={12} md={4}>
+              {/* <h2 className='text-center ct'>CUSTOMER TESTIMONIALS</h2> */}
+              <div class="section-title text-center">
+                    <h3 class="films ct">CUSTOMER TESTIMONIALS</h3>
+            </div>
+             </Grid>
           <Grid item xs={12} md={12} className=''>
                 <Carousel
               showArrows={true}
@@ -32,10 +38,9 @@ function Testimonial() {
             >
               {/* <div> */}
                 {/* <img src="/images/shirley.png" /> */}
-                <div className="myCarousel " >
-                  <h3>Shirley Fultz</h3>
-                  <h4>Designer</h4>
-                  <p>
+                <div className="myCarousel" >
+                  <h4 className='text-white testi-person'>Shirley Fultz</h4>
+                  <p className='text-white'>
                   We planned to get married during the lockdown. Where our main photographer pulled out, Rabi agreed and helped us in capturing our most memorable day. The wedding was in my hometown, 400 kms from Bangalore, gentleman travelled during the most dangerous time. Thank you Wedrise team!
                   </p>
                 </div>
@@ -44,9 +49,8 @@ function Testimonial() {
               {/* <div> */}
                 {/* <img src="/images/daniel.png" /> */}
                 <div className="myCarousel">
-                  <h3>Daniel Keystone</h3>
-                  <h4>Designer</h4>
-                  <p>
+                  <h4 className='text-white testi-person'>Shirley Fultz</h4>
+                  <p className='text-white'>
                   We planned to get married during the lockdown. Where our main photographer pulled out, Rabi agreed and helped us in capturing our most memorable day. The wedding was in my hometown, 400 kms from Bangalore, gentleman travelled during the most dangerous time. Thank you Wedrise team!
                   </p>
                 </div>
@@ -55,17 +59,18 @@ function Testimonial() {
               {/* <div> */}
                 {/* <img src="/images/theo.png" /> */}
                 <div className="myCarousel">
-                  <h3>Theo Sorel</h3>
-                  <h4>Designer</h4>
-                  <p>
+                  <h4 className='text-white testi-person'>Shirley Fultz</h4>
+                  <p className='text-white'>
                   We planned to get married during the lockdown. Where our main photographer pulled out, Rabi agreed and helped us in capturing our most memorable day. The wedding was in my hometown, 400 kms from Bangalore, gentleman travelled during the most dangerous time. Thank you Wedrise team!
                   </p>
+                  
                 </div>
               {/* </div> */}
             </Carousel>
           </Grid>
      
       </Container>
+      </div>
       </>
   );
 }

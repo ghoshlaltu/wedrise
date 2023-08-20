@@ -13,7 +13,7 @@ import img2 from './../../../33.jpg';
 import img3 from './../../../23.jpg';
 import './Home.css';
 
-import Lightbox from "react-lightbox-component";
+// import Lightbox from "react-lightbox-component";
 import "react-lightbox-component/build/css/index.css";
 
 import { Helmet } from 'react-helmet';
@@ -26,23 +26,58 @@ import Link1 from '@mui/material/Link';
 import Testimonial from "./../../Testimonial/Testimonial";
 import LightboxImgHome from "./../../LightboxImgGallery/LightboxImgHome";
 
+import axios from 'axios';
+import BASE_URL from './../../../Config';
+
+
 function Home() {
 
-  
+// const apiUrl = BASE_URL;
 
+// const [loading, setLoading] = useState(false);
+// const [siteInfomyData, setsiteInfoData] = useState(false);
+
+// useEffect(() => {
+//     fetchsiteInfoData(1);
+// }, []);
+
+// const fetchsiteInfoData = async (rowId) => {
+//   setLoading(true);
+//   try {
+//       const response = await axios.get(apiUrl + 'api/site-info', {
+//       headers: {
+//           'Content-Type': 'application/json',
+//       },
+//       });
+//       const fetchedData = response.data.data[0];
+//       setsiteInfoData(fetchedData);
+//       // setLoading(false);
+//   } catch (error) {
+//       console.error('Error fetching data:', error);
+//       // setLoading(false);
+//   }
+// };
+//console.log(siteInfomyData);
   return (
-
-   
     <>
       <Helmet>
-        <title>Home Page - My Website</title>
+        {/* <title>{siteInfomyData.mt1}</title>
         <meta
           name="description"
-          content="description Welcome to our website. Find the latest products and news."
+          content={siteInfomyData.md1}
         />
         <meta
           name="keywords"
-          content="keywords keyword1, keyword2, keyword3"
+          content={siteInfomyData.mc1}
+        /> */}
+        <title>Wedrise</title>
+        <meta
+          name="description"
+          content="Wedrise"
+        />
+        <meta
+          name="keywords"
+          content="Wedrise"
         />
       </Helmet>
       <Container fixed className="my-home-vid">
@@ -60,7 +95,10 @@ function Home() {
       <Container >
         <Grid container spacing={0} className="my-grid">
           <Grid item xs={12} md={12} >
-          <h2 className='text-center heading'>STORIES</h2>
+          {/* <h2 className='text-center heading'>STORIES</h2> */}
+              <div class="section-title text-center">
+                    <h3 class="instagram">STORIES</h3>
+                </div>
           </Grid>
 
           <Grid item xs={12} md={4} className="my-grid">
@@ -81,10 +119,13 @@ function Home() {
       </Container>
 
       
-      <Container >
+      <Container className="filmssection">
         <Grid container spacing={1}>
           <Grid item xs={12} md={12} >
-          <h2 className='text-center heading'>FILMS</h2>
+          {/* <h2 className='text-center heading'>FILMS</h2> */}
+            <div class="section-title text-center">
+                    <h3 class="films">FILMS</h3>
+            </div>
           </Grid>
 
           <Grid item xs={12} md={4} className="">

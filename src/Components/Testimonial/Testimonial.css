@@ -7,6 +7,29 @@
   .testimonial-section 
   {
     max-width: 100% !important;
+    background: rgba(0,0,0,0.45);
+    height: 100%;
+    position: relative;
+    
+  }
+  .control-arrow
+  {
+    display: none;
+  }
+  .text-white{
+    color: #d9d9d9 !important;
+  }
+  .testi-person 
+  {
+    padding-top: 10px !important;
+  }
+  .testi {
+    background-image: url('https://www.wedrise.in/assets/img/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    /* padding: 5px; */
+    /* height: 450px;  */
   }
   .carousel .slide {
     /* background: #fff !important; */
@@ -22,8 +45,8 @@
   .myCarousel {
     /* background: #fafafa; */
     
-  margin-top: 50px !important;
-  margin-bottom: 180px !important;
+  /* margin-top: 10px !important; */
+  margin-bottom: 140px !important;
 
     margin-top: -6%;
     width: 100%;
@@ -31,8 +54,8 @@
     margin-right: auto;
     padding-top: 6%;
     padding-bottom: 8%;
-    padding-left: 5%;
-    padding-right: 5%;
+    /* padding-left: 5%;
+    padding-right: 5%; */
     /* border: 1px solid #ddd; */
     height: 286px;
   }
@@ -42,7 +65,11 @@
     outline: 0;
     bottom: 5% !important;
   }
-  
+  .ct 
+  {
+    padding-top: 50px; 
+    color: #fff !important;
+  }
   .myCarousel h3 {
     color: #222;
     font-weight: 100;

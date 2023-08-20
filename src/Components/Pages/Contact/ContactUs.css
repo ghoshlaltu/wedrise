@@ -70,7 +70,30 @@
   {
     margin-bottom: 100px !important;
   }
-
+.sendbutton 
+{
+    color: #000 !important;
+    border: 1px solid !important;
+}
+fieldset 
+{
+border-color: #000 !important;
+border-width: 0.7px !important;
+}
+.ccc 
+{
+    /* --Textarea-focusedHighlight: #de096d !important; */
+    --Textarea-focusedHighlight: #000 !important;
+    --Textarea-focusedThickness: var(--joy-focus-thickness, 0.7px) !important;
+    
+}
+.ccc label 
+{
+    color: #9a647d !important;
+}
+textarea {
+    color: #9a647d !important;
+}
 .TypographyTitle {
     color: #444 !important;
     /* background: #f0e9e0 !important; */

@@ -7,6 +7,69 @@
 }
 .footer 
 {
+  margin-top: 15px !important;
   text-align: center;
   color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.f-instagram  {
+  font-size: 25px !important;
+  margin-top: 13px !important;
+}
+
+
+
+.footer {
+  background: #1e1e1e !important;
+  color: #cacaca !important;
+}
+.footer .inner {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.footer p.pull-left {
+  margin-top: 3px;
+}
+.footer p {
+  padding: 0;
+  margin: 0;
+}
+.pull-left {
+  float: left !important;
+}
+.footer a {
+  color: #cacaca;
+}
+.social {
+  padding: 0;
+  margin: 0 0 -5px 0;
+  font-size: 0;
+  line-height: 1;
+}
+.social.pull-right li {
+  margin: 0 0 0 5px;
+}
+.social li {
+  display: inline-block;
+  font-family: 'fontello-social';
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.social li a {
+  display: table;
+}
+
+.instagramlink 
+{
+  text-align: center !important;
+}
+.f-pad 
+{
+  padding: 15px !important;
+  /* font-size: 18px !important; */
 }

@@ -200,3 +200,19 @@
       transition: 0.5s;
   }
   }
+
+
+  .ccc 
+{
+    /* --Textarea-focusedHighlight: #de096d !important; */
+    --Textarea-focusedHighlight: #000 !important;
+    --Textarea-focusedThickness: var(--joy-focus-thickness, 0.7px) !important;
+    
+}
+.ccc label 
+{
+    color: #9a647d !important;
+}
+textarea {
+    color: #9a647d !important;
+}

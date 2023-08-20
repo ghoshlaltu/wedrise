@@ -15,13 +15,13 @@ import Link1 from '@mui/material/Link';
 function Footer() {
   return (
     <>
-      <Box sx={{ flexGrow: 1 }} class="footer-Container">
+      <Box sx={{ flexGrow: 1 }} class="footer-Container f-pad">
       <Grid container spacing={2}>
-        <Grid item xs={9} md={10}>
-            <p class="pull-left footer">All content Copyright © 2023 <a href="https://www.wedrise.in/">WEDRISE.IN</a></p>
+        <Grid item xs={12} md={8}>
+            <p class="pull-center footer">All content Copyright © 2023 <a href="https://www.wedrise.in/">WEDRISE.IN</a></p>
         </Grid>
-        <Grid item xs={3} md={2} className="f-instagram">
-          <Link1 href="#" underline="none">
+        <Grid item xs={12} md={4} className="f-instagram instagramlink">
+          <Link1 href="#" underline="none" >
                 <AiFillInstagram />
             </Link1>
         </Grid>

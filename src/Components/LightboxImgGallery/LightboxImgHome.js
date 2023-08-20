@@ -55,7 +55,10 @@ function LightboxImgHome() {
      <Container >
           <div className="App">
           <Grid item xs={12} md={12}>
-          <h2 className='text-center instagram heading'>INSTAGRAM</h2>
+          {/* <h2 className='text-center instagram heading'>INSTAGRAM</h2> */}
+            <div class="section-title text-center ct">
+                    <h3 class="films">INSTAGRAM</h3>
+            </div>
           </Grid >
             <Lightbox className="dddd" images={images} />
             {/* <Lightbox images={[

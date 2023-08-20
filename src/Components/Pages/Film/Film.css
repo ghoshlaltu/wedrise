@@ -11,13 +11,24 @@
 }
 
 @media (min-width: 600px){
-    .films{
-        max-width: 754px !important;
+    .iframe1 
+    {
+        width: 100% !important;
     }
 }
 
+@media (max-width: 768px) {
+    .iframe1 
+    {
+        width: 100% !important;
+    }
+    .film iframe {
+        height: 100% !important;
+    }
+  }
 
-.iframe 
+.film iframe 
 {
-    height: 200px !important;
+    /* height: 385px; */
+    height: 600px;
 }

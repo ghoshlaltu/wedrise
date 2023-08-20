@@ -79,11 +79,11 @@ function StoriesDetails() {
     <Container  maxWidth="sm" className="backkkk  defsult-padding">
         <Grid container spacing={0} >
             <Grid item xs={12} lg={12} className='my-form-Grid'>
-                <TextField className='my-form-TextField' id="outlined-basic" label="First Name" variant="outlined" />
+                <TextField className='my-form-TextField ccc' id="outlined-basic" label="First Name" variant="outlined" />
             </Grid>
            
             <Grid item xs={12} lg={12} className='my-form-Grid'>
-            <Textarea
+            <Textarea className="ccc"
                 placeholder="Type in here…"
                 defaultValue=""
                 minRows={2}
