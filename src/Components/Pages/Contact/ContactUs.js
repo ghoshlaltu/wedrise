@@ -23,12 +23,37 @@ import './ContactUs.css';
 
 import getin from './../../../get-in.png';
 
+import axios from 'axios';
+import BASE_URL from './../../../Config';
 // console.log(setisHeaderBackground);
 
-function ContactUs() {
+function ContactUs({ siteInfoDtl }) {
    
+  const apiUrl = BASE_URL;
+  const [loading, setLoading] = useState(false);
+  const [siteFaqData, setsiteFaqData] = useState([]);
 
+  useEffect(() => {
+    //console.log(data);
+    fetchsiteFaqData();
+  }, []);
 
+  const fetchsiteFaqData = async () => {
+    setLoading(true);
+    try {
+        const response = await axios.get(apiUrl + 'api/site-get-faqs/', {
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        });
+        const fetchedData = response.data.data;
+        setsiteFaqData(fetchedData);
+        // setLoading(false);
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        // setLoading(false);
+    }
+  };
   return (
     <>
     <Container maxWidth="sm" className='getin-section'>
@@ -40,8 +65,11 @@ function ContactUs() {
     <Container maxWidth="text-center">
         <Grid container spacing={2}>
         <Grid item xs={12}>
-        <h2 className='contact-h2'> 
-            Every single human being is unique,
+        <h2 className='contact-h2' dangerouslySetInnerHTML={{ __html: siteInfoDtl.text1 }} />
+
+        {/* <h2 className='contact-h2'>  */}
+            {/* {siteInfoDtl.text1} */}
+            {/* Every single human being is unique,
             <br></br>
             and we believe that every romantic story
             <br></br>
@@ -50,8 +78,8 @@ function ContactUs() {
             <br></br>
             Allow us to get to know you both better,
             <br></br>
-            let’s connect and tell this story together!
-        </h2>
+            let’s connect and tell this story together! */}
+        {/* </h2> */}
         </Grid>
         </Grid>
     </Container>
@@ -61,9 +89,9 @@ function ContactUs() {
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <h2 className='contact-phone'> 
-              +91 9742891407
+              {siteInfoDtl.phone}
               <br></br>
-              hello@wedrise.in
+              {siteInfoDtl.email}
             </h2>
           </Grid>
         </Grid>
@@ -119,7 +147,27 @@ function ContactUs() {
       <Grid container spacing={2}>
         <Grid item xs={12} lg={6}  className="girdaccordion">
           
-          <Accordion>
+          {siteFaqData.map((faq, index) => (
+               (faq.cat === 'Left') ? <Accordion>
+               <AccordionSummary
+                 expandIcon={<ExpandMoreIcon />}
+                 aria-controls="panel1a-content"
+                 id="panel1a-header"
+               >
+                 <Typography className='TypographyTitle'>{faq.title}</Typography>
+               </AccordionSummary>
+               <AccordionDetails className='ddsssssssssssssssssss'>
+                 <Typography>
+
+                  <p dangerouslySetInnerHTML={{ __html: faq.text }}></p>
+                 {/* Most of the budgeting depend upon the size and type of the wedding. Each wedding budget is customisable starting from INR 1.5-2L per day. We take into consideration a lot of factors including your story, personality and how much of the wedding you want to remember. The cost also depends upon the size of crew. Write to us and we'll do our best to make it work for you.
+                 <br></br>
+                 <br></br> */}
+                 </Typography>
+               </AccordionDetails>
+             </Accordion> : "" 
+          ))}
+             {/* <Accordion>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
@@ -192,7 +240,7 @@ function ContactUs() {
                 We are based in Bangalore. We can travel anywhere across the globe to cover your story, you just need to take care of our travel and stay.
                 </Typography>
               </AccordionDetails>
-            </Accordion>
+            </Accordion> */}
         </Grid>
 
 

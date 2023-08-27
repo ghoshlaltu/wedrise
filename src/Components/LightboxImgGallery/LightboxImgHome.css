@@ -57,3 +57,26 @@ padding-top: 100px !important;
 }
   
 } */
+
+
+
+
+
+
+
+
+
+.instagram-link {
+  /* display: flex; */
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.title-text {
+  margin-right: 8px; /* Adjust this spacing as needed */
+}
+
+.instagram-icon {
+  margin-left: 8px; /* Adjust this spacing as needed */
+}

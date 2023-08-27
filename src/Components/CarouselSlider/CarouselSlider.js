@@ -14,8 +14,11 @@ import sli1 from './../../16.jpg';
 import sli2 from './../../23.jpg';
 import sli3 from './../../33.jpg';
 
-function CarouselSlider() {
+import BASE_URL from './../../Config';
+
+function CarouselSlider({StoriesSliders}) {
    
+  const apiUrl = BASE_URL;
     var items = [
         {
             img: 'https://www.wedrise.in/assets/img/slider/2a.jpg',
@@ -38,10 +41,16 @@ function CarouselSlider() {
 
   return (
     <>
-        <Carousel>
+        {/* <Carousel>
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }
+        </Carousel> */}
+
+        <Carousel>
+            {StoriesSliders.map((item, i) => (
+            <Item key={i} item={item} />
+            ))}
         </Carousel>
     </>
   );
@@ -52,9 +61,13 @@ function CarouselSlider() {
 
 function Item(props)
 {
+    const apiUrl = BASE_URL;
+    // console.log(apiUrl);
+    // alert(props.item);
+    console.log(apiUrl+props.item.image);
     return (
         <Paper>
-            <img src={props.item.img} alt="slider" className='stories_slider' />
+            <img src={apiUrl+props.item.image} alt="slider" className='stories_slider' />
         </Paper>
     )
 }

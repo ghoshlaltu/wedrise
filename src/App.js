@@ -14,21 +14,49 @@ import Footer from "./Components/Footer/Footer"; // Footer components
 
 import { BrowserRouter as Router, Routes, Route, useParams } from "react-router-dom";
 
+import axios from 'axios';
+import BASE_URL from './Config';
 
 
 function App() {
 
     // const [isHeaderBackground, setisHeaderBackground] = useState(''); // new changes  01
 
+    const apiUrl = BASE_URL;
+
+    const [loading, setLoading] = useState(false);
+    const [siteInfomyData, setsiteInfoData] = useState(false);
+    
+    useEffect(() => {
+        fetchsiteInfoData(1);
+    }, []);
+    
+    const fetchsiteInfoData = async (rowId) => {
+      setLoading(true);
+      try {
+          const response = await axios.get(apiUrl + 'api/site-info', {
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          });
+          const fetchedData = response.data.data[0];
+          setsiteInfoData(fetchedData);
+          // setLoading(false);
+      } catch (error) {
+          console.error('Error fetching data:', error);
+          // setLoading(false);
+      }
+    };
+
     return ( 
     <Router>
         <Navigation/>
         <Routes>
-            <Route path="/" element = {<Home/> }/> 
-            <Route path="/stories" element={<Stories/>}/> 
-            <Route path="/films" element={<Film/>}/> 
-            <Route path="/stories-details" element={<StoriesDetails/>}/> 
-            <Route path="/contact" element={<ContactUs/>}/> 
+            <Route path="/" element = {<Home siteInfoDtl={siteInfomyData}/> }/> 
+            <Route path="/stories" element={<Stories siteInfoDtl={siteInfomyData}/>}/> 
+            <Route path="/films" element={<Film siteInfoDtl={siteInfomyData}/>} /> 
+            <Route path="/stories-details/:stories_link" element={<StoriesDetails siteInfoDtl={siteInfomyData}/>}/> 
+            <Route path="/contact" element={<ContactUs siteInfoDtl={siteInfomyData}/>}/> 
         </Routes> 
         <Footer/>
     </Router>

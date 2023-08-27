@@ -10,9 +10,6 @@ import Lightbox from "react-lightbox-component";
 import "react-lightbox-component/build/css/index.css";
 
 
-import { AiFillInstagram } from "react-icons/ai";
-import Link1 from '@mui/material/Link';
-
 import axios from 'axios';
 import BASE_URL from './../../Config';
 
@@ -52,6 +49,7 @@ function LightboxImgHome({ siteInfoDtl }) {
   var images = siteInstagramData.map(item => ({
     src: apiUrl+item.image,            // Use the image URL from the API response
     title: item.name,           // Use the name from the API response
+    link: item.link,
     description: item.text.replace(/<\/?p>/g, "")
       
     
@@ -66,30 +64,14 @@ function LightboxImgHome({ siteInfoDtl }) {
                     <h3 class="films">{siteInfoDtl.text4}</h3>
             </div>
           </Grid >
-            {/* <Lightbox className="dddd" images={images} /> */}
-            <Lightbox
-              className="dddd"
-              images={siteInstagramData.map(item => ({
-                src: apiUrl + item.image,
-                title: (
-                  <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="instagram-link"
-                >
-                  <span className="title-text">{item.name}</span>
-                  <span className="instagram-icon">
-                    <Link1 href={item.link} target='_blank' underline="none">
-                      <AiFillInstagram />
-                    </Link1>
-                  </span>
-                </a>
-                ),
-                description: item.text.replace(/<\/?p>/g, ''),
-              }))}
-              showImageModifiers={false}
-            />
+            <Lightbox className="dddd" images={images} />
+            {/* <Lightbox images={[
+          this.state.interiorsPhotos.map((photo, index) => {
+            {
+              src: `../images/${photo}.jpg`      
+            }
+          })
+        ]} /> */}
             </div>
       </Container>
     </>

@@ -12,9 +12,38 @@ import Card from '@mui/material/Card';
 
 import { Helmet } from 'react-helmet';
 
+import axios from 'axios';
+import BASE_URL from './../../../Config';
 
 
-function Film() {
+function Film({siteInfoDtl}) {
+
+  const apiUrl = BASE_URL;
+  const [loading, setLoading] = useState(false);
+  const [siteHomeFilmData, setsiteHomeFilmData] = useState([]);
+
+  
+  useEffect(() => {
+    fetchsiteHomeFilmData();
+  }, []);
+
+  const fetchsiteHomeFilmData = async () => {
+    setLoading(true);
+    try {
+        const response = await axios.get(apiUrl + 'api/site-get-films', {
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        });
+        const fetchedData = response.data.data;
+        setsiteHomeFilmData(fetchedData);
+        // setLoading(false);
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        // setLoading(false);
+    }
+  };
+  //console.log(siteInfoDtl);
 
   return (
 
@@ -33,13 +62,14 @@ function Film() {
       </Helmet>
       <Container fixed className="my-home-vid">
         <video className='videoTag' autoPlay loop muted>
-              <source src={'https://www.wedrise.in/assets/img/aa12.mp4'} type='video/mp4' />
+              <source src={apiUrl+siteInfoDtl.vid3} type='video/mp4' />
           </video>
       </Container>
 
       <Container maxWidth="lg" className='films'>
+      {siteHomeFilmData.map((siteHomeFilms, index) => (
             <Grid item xs={12} md={4} className="film">
-                <iframe className="iframe1" src='https://www.youtube.com/embed/R_IlwGIV6Bw'
+                <iframe className="iframe1" src={`https://www.youtube.com/embed/${siteHomeFilms.link}`}
                     frameborder='0'
                     width="380"
                     height="100%"
@@ -48,8 +78,9 @@ function Film() {
                     title='video'
                 />
           </Grid>
+          ))}
           
-          <Grid item xs={12} md={4} className="film">
+          {/* <Grid item xs={12} md={4} className="film">
                 <iframe className="iframe" src='https://www.youtube.com/embed/R_IlwGIV6Bw'
                     frameborder='0'
                     width="380"
@@ -91,7 +122,7 @@ function Film() {
                     allowfullscreen
                     title='video'
                 />
-          </Grid>
+          </Grid> */}
         </Container>
         <br></br>
 
